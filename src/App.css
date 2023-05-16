@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+.box-code-card .ant-card-body {
+  height: 300px;
+  overflow-y: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table-head-row {
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table-head-row .col-label {
+  line-height: 32px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.table-head-row .col-input {
+  width: 150px;
 }
 
-.App-link {
-  color: #61dafb;
+.table-head-row .col-button {
+  float: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CodeMirror {
+  border: 1px solid #eee;
+  height: 300px;
+}
+
+.CodeMirror-scroll {
+  height: 300px;
+  overflow-y: hidden;
+  overflow-x: 50px;
+}
+
+.pod .CodeMirror {
+  border: 1px solid #eee;
+  height: 650px;
+}
+
+.map .CodeMirror {
+  border: 1px solid #eee;
+  height: 500px;
+}
+
+.pod .CodeMirror-scroll {
+  height: 650px;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.map .CodeMirror-scroll {
+  height: 500px;
+  overflow-y: hidden;
+  overflow-x: auto;
 }
